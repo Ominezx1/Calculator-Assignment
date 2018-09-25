@@ -25,15 +25,17 @@ let calculator = {
    const div = calculator.num1 / calculator.num2;
      return div;  
   },
-  sqr:()=>{
-    const sqr = "num1<sup>2</sup>=";
-     return mul;  
+  sqr:() =>{
+    const sqr1 = "Square of num1 = " + calculator.num1 ** 2;
+    const sqr2 = "Square of num2 = " + calculator.num2 ** 2;
+    const sqr = sqr1 + " "  + sqr2;
+     return sqr;  
   }
 };
 calculator.read();
 alert( calculator.sum() );
 alert( calculator.mul() );
 alert( calculator.div() );
-
+alert( calculator.sqr() );
     
 
